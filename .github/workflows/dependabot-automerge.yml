@@ -1,12 +1,6 @@
 name: Auto-merge Dependabot minors
 
-on:
-  pull_request_target:
-  workflow_run:
-    workflows:
-      - Tests
-    types:
-      - completed
+on: pull_request_target
 
 permissions:
   pull-requests: write
@@ -15,13 +9,13 @@ permissions:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' && github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
       - name: Dependabot metadata
         id: metadata
         uses: dependabot/fetch-metadata@v1.1.1
         with:
-          github-token: '${{ secrets.GITHUB_TOKEN }}'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Approve and merge minor updates
         if: ${{ steps.metadata.outputs.update-type == 'version-update:semver-minor' || steps.metadata.outputs.update-type == 'version-update:semver-patch' }}
         run: |
