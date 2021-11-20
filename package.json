@@ -22,7 +22,6 @@
   "devDependencies": {
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.9",
-    "aws-sdk": "^2.4",
     "jest": "^27.3.1"
   },
   "dependencies": {
