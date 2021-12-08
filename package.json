@@ -21,7 +21,7 @@
   "homepage": "https://github.com/vicary/test-dependabot#readme",
   "devDependencies": {
     "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.11",
+    "@types/node": "^16.11.12",
     "jest": "^27.4.3"
   },
   "dependencies": {
