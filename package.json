@@ -22,7 +22,7 @@
   "devDependencies": {
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.7",
-    "jest": "^27.4.5"
+    "jest": "^27.4.6"
   },
   "dependencies": {
     "jsoneditor": "^9.5.11"
