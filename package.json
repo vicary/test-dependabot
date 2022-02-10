@@ -25,6 +25,6 @@
     "jest": "^27.5.1"
   },
   "dependencies": {
-    "jsoneditor": "^9.7.0"
+    "jsoneditor": "^9.7.2"
   }
 }
